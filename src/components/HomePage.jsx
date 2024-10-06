@@ -6,16 +6,16 @@ import govlogo from '../assets/images/gov-logo.png';
 export default function HomePage() {
   return (
     <div>
-      <nav className="navbar bg-body-tertiary" padding="1px" border="1px">
-<div className="container" padding="1px" margin-left="0px">
-<img src={govlogo} width="60" height="100" margin="1px">
+      <nav className="navbar bg-body-tertiary" padding="1px" border="1px" >
+<div className="container"  margin-left="0px">
+<img src={govlogo} width="60" height="100" margin="1px" position="relative" left="0" top="0">
 </img>
 <a className="navbar-brand" href="#">
 
 </a>
 </div>
 </nav>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" position="absolute" left="0">
 <div className="container-fluid">
 <a className="navbar-brand" href="#">Home</a>
 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
