@@ -17,14 +17,14 @@ const App = () => {
   return (
     <div>
       {/* Navbar Section */}
-      <nav className="navbar bg-body-tertiary" style={{ padding: "1px", border: "1px" }}>
+      <nav className="navbar bg-body-tertiary" style={{ padding: "1px", border: "1px", position: "fixed", top: "0", width: "100%", zIndex: "1000" }}>
         <div className="container" style={{ padding: "1px", marginLeft: "0px" }}>
           <img src={govlogo} width="60" height="100" alt="Government Logo"></img>
           <a className="navbar-brand" href="#"></a>
         </div>
       </nav>
 
-      <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ position: "absolute", left: "0" }}>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ position: "fixed", top: "100px", left: "0", width: "100%", zIndex: "999" }}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#">Home</a>
           <button
@@ -63,7 +63,7 @@ const App = () => {
       </nav>
 
       {/* Main App Section */}
-      <Container className="mt-4">
+      <Container className="mt-5 pt-5">
         {/* Header Section */}
         <Row className="mb-4">
           <Col className="text-start">
@@ -117,17 +117,6 @@ const App = () => {
           </div>
 
           <div className="col mb-3"></div>
-
-          <div className="col mb-3">
-            <h5>Section</h5>
-            <ul className="nav flex-column">
-              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Home</a></li>
-              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Features</a></li>
-              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">Pricing</a></li>
-              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">FAQs</a></li>
-              <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-body-secondary">About</a></li>
-            </ul>
-          </div>
 
           <div className="col mb-3">
             <h5>Section</h5>
